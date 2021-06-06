@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.SAYFAM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script type="text/javascript">
+ $(document).ready(function()
+{
+var ad=document.getElementById("ad");
+var sifre=document.getElementById("sifre");
+
+$("#ad").attr("autocomplete", "off");
+$("#sifre").attr("autocomplete", "off");
+
+$(s3_gec).click(function()
+{
+  localStorage.setItem(ad.id,ad.value);
+  localStorage.setItem(sifre.id,sifre.value);
+});
+
+});
+    </script>
+</head>
+<body>
+    <div class="giris">
+        <h2>GİRİŞ YAP</h2>
+        <form>
+            <div class="pc">
+                <input id="ad" type="text" required= "">
+                <span>Kullanıcı Adınız</span>
+            </div>
+
+            <div class="pc">
+                <input id="sifre" type="password" required= "">
+                <span>Şifreniz</span>
+            </div>
+
+            <div class="pc">
+                <input type="submit" value=""> 
+                 <a href="s3.html" id="s3_gec">KAYIT OL</a> 
+            </div>
+        </form>
+        <a href="#">Şifrenizi unuttuysanız <span>Buraya Tıklayınız.</span></a>
+    </div>
+    
+</body>
+</html>
